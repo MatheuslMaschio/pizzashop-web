@@ -34,7 +34,9 @@ export function RevenueChart() {
                             tickFormatter={(value: number) => value.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} 
                             width={80}
                         />
+                        <CartesianGrid vertical={false} className="stroke-muted" />
                         <Line type="linear" strokeWidth={2} dataKey="revenue" stroke={colors['violet']['500']}/>
+                        
                     </LineChart>
                 </ResponsiveContainer>
             </CardContent>
