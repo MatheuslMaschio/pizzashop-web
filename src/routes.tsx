@@ -4,6 +4,7 @@ import { SignIn } from "./pages/auth/SignIn";
 import { AppLayout } from "./pages/_layouts/app";
 import { AuthLayout } from "./pages/_layouts/auth";
 import { SignUp } from "./pages/auth/SignUp";
+import { Orders } from "./pages/app/orders/orders";
 
 
 export const router = createBrowserRouter([
@@ -12,6 +13,7 @@ export const router = createBrowserRouter([
         element: <AppLayout />, //uso de layout
         children: [
             {path: "/", element: <Dashboard />}, //elemento filho
+            {path: "/orders", element: <Orders />},
         ]
     },
 
